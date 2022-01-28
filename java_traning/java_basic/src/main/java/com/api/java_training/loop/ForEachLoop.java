@@ -1,4 +1,4 @@
-package com.api.training.loop;
+package com.api.java_training.loop;
 
 public class ForEachLoop {
 	public static void main(String arg[]) {
@@ -24,8 +24,6 @@ public class ForEachLoop {
 		
 		System.out.println("ForEach loop print even odd number");
 		int[] values = {1,2,3,4,5,6,7,8,9,10};
-		
-		for(int val: values) {}
 			
 		System.out.println("even");
 		for(int e: values) {

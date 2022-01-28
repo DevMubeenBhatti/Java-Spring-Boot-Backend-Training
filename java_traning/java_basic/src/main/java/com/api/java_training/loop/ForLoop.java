@@ -1,4 +1,4 @@
-package com.api.training.loop;
+package com.api.java_training.loop;
 
 public class ForLoop {
 
