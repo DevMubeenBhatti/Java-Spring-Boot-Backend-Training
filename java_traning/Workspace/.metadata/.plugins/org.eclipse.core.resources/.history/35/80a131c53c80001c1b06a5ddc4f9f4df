@@ -1,0 +1,14 @@
+package com.api.java_training.operator;
+
+public class JavaOperator {
+
+	public static void main(String[] args) {
+//	1. Arthemic operators
+		int a = 4;
+		int b = 6 % a; // Modulo operator
+		System.out.println(b);
+		
+
+	}
+
+}
