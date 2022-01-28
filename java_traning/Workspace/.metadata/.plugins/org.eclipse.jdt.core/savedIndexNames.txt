@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+D:\Git\Java-Spring-Boot-Backend-Training\java_traning\Workspace\.metadata\.plugins\org.eclipse.jdt.core
-776178153.index
-1865797976.index
-3412407229.index
