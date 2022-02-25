@@ -9,7 +9,8 @@ public class TopicService {
 	private List<Topic> topics =new ArrayList<> (Arrays.asList(
 			new Topic("Spring", "Spring Framwork", "Spring Framework Description"),
 			new Topic("java","Spring Framwork", "Spring Framework Description"),
-			new Topic("javaScript", "Spring Framwork", "Spring Framework Description")
+			new Topic("javaScript", "Spring Framwork", "Spring Framework Description"),
+			new Topic("HTML", "HTML Spring Framwork", "HTML Spring Framework Description")
 			));
 	
 	public List<Topic> getAllTopics(){
@@ -20,5 +21,17 @@ public class TopicService {
 	}
 	public void addTopic(Topic topic) {
 		topics.add(topic);
+	}
+	public void updateTopic(String id, Topic topic) {
+		for(int i=0; i<topics.size();i++) {
+			Topic t = topics.get(i);
+			if(t.getId().equals(id)) {
+				topics.set(i, topic);
+				return;
+			}
+		}
+	}
+	public void deleteTopic(String id) {
+		topics.removeIf(t -> t.getId().equals(id));
 	}
 }
