@@ -12,10 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TopicController {
-	
 	@Autowired
-	private TopicService topicService;
-	
+	private ItopicService topicService;
 	@RequestMapping("/topics")
 	public List<Topic> getAllTopic() {
 		return topicService.getAllTopics();
