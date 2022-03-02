@@ -19,8 +19,7 @@ import com.api.employee.employee.service.EmpService;
 public class EmpController {
 	@Autowired
 	public EmpService implementEmpService;
-	
-	@GetMapping("/employees")
+	@GetMapping(path = "/employees")
 	public List<EmpModel> Employees(){
 		return implementEmpService.allEmployee();
 	}
@@ -40,5 +39,4 @@ public class EmpController {
 	public void updateEmp(@PathVariable Long id, @RequestBody EmpModel emp) {
 		implementEmpService.updateEmp(id, emp);
 	}
-	
 }

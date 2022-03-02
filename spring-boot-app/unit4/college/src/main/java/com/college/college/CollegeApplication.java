@@ -1,12 +1,9 @@
-package com.api.employee.employee;
-
+package com.college.college;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 @SpringBootApplication
-public class EmployeeApplication {
-
+public class CollegeApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(EmployeeApplication.class, args);
+		SpringApplication.run(CollegeApplication.class, args);
 	}
 }
